@@ -23,7 +23,7 @@ function(Product)
   reader <- basicTextGatherer()
   header <- basicTextGatherer()
   
-  curlPerform(url = "http://daac.ornl.gov/cgi-bin/MODIS/GLBVIZ_1_Glb_subset/MODIS_webservice.pl",
+  curlPerform(url = "http://daacmodis.ornl.gov/cgi-bin/MODIS/GLBVIZ_1_Glb_subset/MODIS_webservice.pl",
               httpheader = header.fields,
               postfields = getbands.xml,
               writefunction = reader$update,
